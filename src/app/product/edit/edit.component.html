@@ -1,0 +1,9 @@
+<h3>Edit product</h3>
+<form (ngSubmit)="editProduct()">
+  <input [(ngModel)]="product.name" name="name">
+  <input [(ngModel)]="product.description" name="desp">
+  <select [(ngModel)]="product.category.id" name="category">
+    <option *ngFor="let c of categories" [value]="c.id">{{c.name}}</option>
+  </select>
+  <input type="submit" value="EDIT">
+</form>

@@ -1,0 +1,7 @@
+<p>Login</p>
+<form (ngSubmit)="login()">
+  <input [(ngModel)]="user.username" name="username"><br>
+  <input [(ngModel)]="user.password" name="password"><br>
+  <input type = "submit" value="Login"><br>
+</form>
+<button (click)="testJwt()">Test</button>
